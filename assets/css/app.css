@@ -62,6 +62,9 @@
 .ui-liveapp .ui-slide.ui-slide-btn .ui-slide-hd {
   bottom: 100px;
 }
+.ui-liveapp .ui-slide.ui-slide-btn .ui-slide-hd li:first-child {
+  margin-left: 0;
+}
 .ui-liveapp .ui-slide.ui-slide-btn .ui-slide-hd li {
   width: 8px;
   height: 8px;
@@ -86,14 +89,6 @@
 }
 .ui-liveapp .ui-liveapp-page .tt2 {
   color: #A6A6A6;
-}
-.ui-liveapp .ui-liveapp-page .align-center {
-  -webkit-box-flex: 1;
-  box-flex: 1;
-  display: box;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-box-pack: center;
 }
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page1 {
   background: #1D1D1D;
@@ -126,7 +121,16 @@
   font-size: 12px;
 }
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page1 .goods {
-  position: relative;
+  height: 100%;
+  min-height: 534px;
+  top: 0;
+  position: absolute;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
 }
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page2 {
   background: #f4f7f7;
@@ -216,7 +220,14 @@
   font-size: 12px;
 }
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page6 .goods {
-  bottom: 10%;
+  height: 100%;
+  top: 0;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
 }
 .ui-header-default {
   background: rgba(255, 255, 255, 0.9);

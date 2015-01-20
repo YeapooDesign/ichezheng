@@ -4,7 +4,6 @@
 @import "variables.less";
 @import "mixins.less";
 
-
 // widget - liveapp
 .ui-liveapp{
 	top:49px;
@@ -16,6 +15,7 @@
 		}
 		.ui-slide-hd{
 			bottom: 100px;
+			li:first-child{margin-left: 0;}
 			li {
 				width: 8px;
 				height: 8px;
@@ -24,16 +24,17 @@
 			}
 		}
 	}
-	//垂直居中文字
-    .align-center(){
-        -webkit-box-flex: 1;
-        box-flex: 1;
-        display: box;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-box-pack: center;
-    }
+
 	.ui-liveapp-page {
+		//垂直居中文字
+		.align-center(){
+		    -webkit-box-flex: 1;
+		    box-flex: 1;
+		    display: box;
+		    display: -webkit-box;
+		    -webkit-box-orient: vertical;
+		    -webkit-box-pack: center;
+		}
 		.txt {
 			width: 100%;
 			padding:0 30px;
@@ -47,7 +48,7 @@
 		}
 		.tt2{color: #A6A6A6;}
 		.align-center{
-			.align-center();
+			// .align-center();
 		}
 		&.ui-liveapp-page1 {
 			background: #1D1D1D;
@@ -71,7 +72,7 @@
 				border: 1px solid #00d7d8;
 			}
 			.intro4{font-size: 12px;}
-			.goods{position: relative;}
+			.goods{height: 100%;min-height: 534px;top:0;position: absolute;.align-center();}
 		}
 		&.ui-liveapp-page2 {
 			background: rgb(244, 247, 247);
@@ -106,7 +107,7 @@
 			background: rgb(255,255,255);
 			.tt{margin-top:20px;}
 			.intro1{margin-top:20px;font-size: 12px;}
-			.goods{bottom: 10%;}
+			.goods{height: 100%;top:0;.align-center();}
 		}
 	}
 }

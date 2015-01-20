@@ -87,6 +87,14 @@
 .ui-liveapp .ui-liveapp-page .tt2 {
   color: #A6A6A6;
 }
+.ui-liveapp .ui-liveapp-page .align-center {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+}
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page1 {
   background: #1D1D1D;
 }
@@ -108,7 +116,7 @@
   width: 100px;
   font-size: 16px;
   padding: 0;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   color: #00d7d8;
   border-radius: 3px;
   line-height: 40px;
@@ -118,7 +126,7 @@
   font-size: 12px;
 }
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page1 .goods {
-  bottom: 10%;
+  position: relative;
 }
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page2 {
   background: #f4f7f7;
@@ -131,7 +139,14 @@
   font-size: 12px;
 }
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page2 .goods {
-  bottom: 30%;
+  top: 0%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
 }
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page2 .goods-3 {
   bottom: 15%;
